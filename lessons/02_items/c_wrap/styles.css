@@ -1,0 +1,13 @@
+.example.grow {
+  display: flex;
+  flex-direction: row;
+}
+.example.grow.nowrap {
+  flex-wrap: nowrap;
+}
+.example.grow.wrap {
+  flex-wrap: wrap;
+}
+.example.grow.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}

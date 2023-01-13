@@ -1,0 +1,13 @@
+.example.grow {
+  display: flex;
+  flex-direction: row;
+}
+.item-flex {
+  flex-basis: auto; /* sets default size for grow/shrink */
+}
+.item-grow-1 {
+  flex: 1;
+}
+.item-grow-3 {
+  flex: 3;
+}

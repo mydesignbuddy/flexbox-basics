@@ -1,0 +1,57 @@
+.example-full header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.example-full header .branding {
+    display: flex;
+    flex-direction: row;
+}
+.example-full header .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.example-full section.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.example-full section.content .plans {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.example-full section.content .plans .plan {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+}
+.example-full section.content .plans .plan .plan-desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+}
+.example-full section.content .plans .plan .plan-desc ul.plan-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+@media (max-width: 550px) {
+    .example-full section.content .plans {
+        flex-direction: column;
+    }
+}
+@media (max-width: 470px) {
+    .example-full header, .example-full header .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Item Align Content</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <script>
+        const prev = {
+            label: "Item Align",
+            href: "./02_items_f_align_self.html"
+        };
+        const next = {
+            label: "Flex Gap",
+            href: "./03_gap.html"
+        };
+    </script>
+    <script src="../../assets/scripts/nav.js"></script>
+    <script src="../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+    <h1>Align Content</h1>
+    <p>This aligns a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.</p>
+        
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example align-content">
+    <div class="item">Lorem ipsum dolor sit amet</div>
+    <div class="item">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div class="item">Nunc consequat</div>
+    <div class="item">Odio aenean sed adipiscing diam. Eu volutpat</div>
+    <div class="item">Eget</div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.align-content {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    /*align-content: center;*/
+    /*align-content: flex-end;*/
+    /*align-content: space-between;*/
+    /*align-content: space-around;*/
+    /*align-content: space-evenly;*/
+    /*align-content: stretch;*/
+}
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+</body>
+</html>

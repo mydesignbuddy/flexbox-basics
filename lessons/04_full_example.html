@@ -1,0 +1,167 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Full Example</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <link rel="stylesheet" href="./04_full_example.css">
+
+<script>
+        const prev = {
+            label: "Flex Gap",
+            href: "./03_gap.html"
+        };
+        const next = {
+            label: "Answer",
+            href: "javascript:giveAnswer()"
+        };
+</script>
+<script src="../../assets/ace-editor/ace.js"></script>
+<script src="../../assets/scripts/nav.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><!-- Reference Layout https://getbootstrap.com/docs/5.3/examples/pricing/ -->
+<div class="example-full">
+    <header>
+        <div class="branding">
+            <div class="logo"></div>
+            <div class="title">Pricing Example</div>
+        </div>
+        <ul class="nav">
+            <li>Features</li>
+            <li>Enterprise</li>
+            <li>Support</li>
+            <li>Pricing</li>
+        </ul>
+    </header>
+    <section class="content">
+        <h1>Pricing</h1>
+        <p>Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+        <section class="plans">
+            <div class="plan">
+                <div class="plan-name">Free</div>
+                <div class="plan-desc">
+                    <div class="plan-pricing">$0/mo</div>
+                    <ul class="plan-features">
+                        <li>10 users included</li>
+                        <li>2 GB of storage</li>
+                        <li>Email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button>Sign up for free</button>
+                </div>
+            </div>
+            
+            <div class="plan">
+                <div class="plan-name">Pro</div>
+                <div class="plan-desc">
+                    <div class="plan-pricing">$15/mo</div>
+                    <ul class="plan-features">
+                        <li>20 users included</li>
+                        <li>10 GB of storage</li>
+                        <li>Priority email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button>Get started</button>
+                </div>
+            </div>
+            
+            <div class="plan">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-desc">
+                    <div class="plan-pricing">$29/mo</div>
+                    <ul class="plan-features">
+                        <li>30 users included</li>
+                        <li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li>
+                    </ul>
+                    <button>Get started</button>
+                </div>
+            </div>
+        </section>
+    </section>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+    <script>
+        const answer = `.example-full header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.example-full header .branding {
+    display: flex;
+    flex-direction: row;
+}
+.example-full header .nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.example-full section.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.example-full section.content .plans {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.example-full section.content .plans .plan {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+}
+.example-full section.content .plans .plan .plan-desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: stretch;
+}
+.example-full section.content .plans .plan .plan-desc ul.plan-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+@media (max-width: 550px) {
+    .example-full section.content .plans {
+        flex-direction: column;
+    }
+}
+@media (max-width: 470px) {
+    .example-full header, .example-full header .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}`;
+function giveAnswer () {
+    cssEditor.session.setValue(answer);
+}
+</script>
+</body>
+</html>

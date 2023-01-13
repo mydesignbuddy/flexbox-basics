@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Flows</title>
+    <link rel="stylesheet" href="../../../assets/main.css">
+    <script>
+        const prev = {
+            label: "Flexbox Flows",
+            href: "./01_flows.html"
+        };
+        const next = {
+            label: "Items Grow",
+            href: "./02_items_b_grow.html"
+        };
+    </script>
+    <script src="../../../assets/scripts/nav.js"></script>
+    <script src="../../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+<h1>Flex Item Order</h1>
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example ordering">
+  <div class="item item-order-4">1 <span>(4)</span></div>
+  <div class="item item-order-2">2 <span>(2)</span></div>
+  <div class="item item-order-1">3 <span>(1)</span></div>
+  <div class="item item-order-3">4 <span>(3)</span></div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.ordering {
+  display: flex;
+  flex-direction: row;
+}
+.item-order-1 {
+  background-color: red;
+  order: 1;
+}
+.item-order-2 {
+  order: 2;
+}
+.item-order-3 {
+  background-color: purple;
+  order: 3;
+}
+.item-order-4 {
+  background-color: green;
+  order: 4;
+}
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../../assets/scripts/editor.js"></script>
+</body>
+</html>

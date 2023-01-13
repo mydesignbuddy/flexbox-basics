@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Item Align Self</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <script>
+        const prev = {
+            label: "Item Align",
+            href: "./02_items_e_align.html"
+        };
+        const next = {
+            label: "Item Align Content",
+            href: "./02_items_g_align_content.html"
+        };
+    </script>
+    <script src="../../assets/scripts/nav.js"></script>
+    <script src="../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+    <h1>Align Self</h1>
+    <p>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</p>
+        
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example align-self">
+    <div class="item">1</div>
+    <div class="item stretch">2</div>
+    <div class="item">3</div>
+    <div class="item center">4</div>
+    <div class="item">5</div>
+    <div class="item end">6</div>
+    <div class="item">7</div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.align-self {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    align-items: flex-start;
+  }
+  .example.align-self > .item.stretch {
+    background-color: red;
+    align-self: stretch;
+  }
+  .example.align-self > .item.center {
+    background-color: green;
+    align-self: center;
+  }
+  .example.align-self > .item.end {
+    background-color: purple;
+    align-self: flex-end;
+  }
+  
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+</body>
+</html>

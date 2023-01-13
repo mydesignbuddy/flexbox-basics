@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Flex Grow (and Shrink)</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <script>
+        const prev = {
+            label: "Item Order",
+            href: "./02_items_a_order.html"
+        };
+        const next = {
+            label: "Item Wrap",
+            href: "./02_items_c_wrap.html"
+        };
+    </script>
+    <script src="../../assets/scripts/nav.js"></script>
+    <script src="../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+<h1>Flex Grow (and Shrink)</h1>
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example grow">
+  <div class="item item-flex item-grow-1">1 <span>(1)</span></div>
+  <div class="item item-flex">2 <span>(basis)</span></div>
+  <div class="item item-flex item-grow-3">3 <span>(3)</span></div>
+  <div class="item item-flex">4 <span>(basis)</span></div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.grow {
+  display: flex;
+  flex-direction: row;
+}
+.item-flex {
+  flex-basis: auto; /* sets default size for grow/shrink */
+}
+.item-grow-1 {
+  flex: 1;
+}
+.item-grow-3 {
+  flex: 3;
+}
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+</body>
+</html>

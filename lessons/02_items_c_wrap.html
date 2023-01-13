@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Item Wrap</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <script>
+        const prev = {
+            label: "Items Grow",
+            href: "./02_items_b_grow.html"
+        };
+        const next = {
+            label: "Item Justification",
+            href: "./02_items_d_justify.html"
+        };
+    </script>
+    <script src="../../assets/scripts/nav.js"></script>
+    <script src="../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+    <h1>Flex Wrap</h1>
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example grow">
+    <div class="item">1</div>
+    <div class="item wide">2</div>
+    <div class="item wider">3</div>
+    <div class="item wide">4</div>
+    <div class="item">5</div>
+    <div class="item wider">6</div>
+    <div class="item">7</div>
+    <div class="item wide">8</div>
+    <div class="item wide">9</div>
+    <div class="item">10</div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.grow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*flex-wrap: wrap;*/
+  /*flex-wrap: wrap-reverse;*/
+}
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+</body>
+</html>

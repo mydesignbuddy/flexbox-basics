@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics: Flows</title>
+    <link rel="stylesheet" href="../../assets/main.css">
+    <script>
+        const prev = {
+            label: "No Flexbox",
+            href: "./00_noflex.html"
+        };
+        const next = {
+            label: "Items Order",
+            href: "./02_items_a_order.html"
+        };
+    </script>
+    <script src="../../assets/scripts/nav.js"></script>
+    <script src="../../assets/ace-editor/ace.js"></script>
+</head>
+<body>
+
+<section class="main">
+
+<h1>Flexbox Flows</h1>
+
+<!-- START PREVIEW and IDE -->
+      <div id="preview"></div>
+      <div id="ide"></div>
+<!-- END PREVIEW and IDE -->
+
+<!-- START default editor code -->
+<script type="text/plain" id="default-html-code"><div class="example horizontal">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+</script>
+<script type="text/plain" id="default-css-code">.example.horizontal {
+  display: flex;
+  flex-direction: column;
+  /*flex-direction: column-reverse;*/
+  /*flex-direction: row;*/
+  /*flex-direction: row-reverse;*/
+}
+</script>
+<!-- END default editor code -->
+
+</section>
+    <script src="../../assets/scripts/editor.js"></script>
+</body>
+</html>
